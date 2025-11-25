@@ -1,0 +1,20 @@
+/*basic Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ae4242;
+}
+
+/* Navigation Style */
+.nav-container {
+    background-color: #333;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+}
