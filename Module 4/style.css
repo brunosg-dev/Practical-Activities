@@ -18,12 +18,14 @@ body {
     position: sticky;
     top: 0;
 }
-
-.main-nav ul {
-    list-style: none;
+/* I encountered issues to take the bullet points off here because of .main-nav ul */
+.main-nav {
+    list-style-type: none; /* Removes the bullet points */
     display: flex;
     justify-content: center;
     gap: 2rem;
+    padding: 0; /* removes extra padding */
+    margin: 0;  /* removes extra space around the list */
 }
 
 .main-nav a {
@@ -64,6 +66,8 @@ header h1 {
 }
 
 .about-section, .services-section, .contact-section {
+    justify-content: center; /* I added this */
+    text-align: center; /* I added this */
     background-color: white;
     padding: 2rem;
     margin-bottom: 2rem;
