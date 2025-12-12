@@ -13,10 +13,13 @@ body {
 
 /* Navigation Styling*/
 .nav-container {
+    display: block;
     background-color: #333;
     padding: 1rem 0;
     position: sticky;
     top: 0;
+    width: 100%;
+    z-index: 99; /* Ensures the navbar stays on top of other content*/
 }
 /* I encountered issues to take the bullet points off here because of .main-nav ul */
 .main-nav {
@@ -39,8 +42,9 @@ body {
     color: #ffd700;
 }
 
-/* Headr Styling */
+/* Header Styling */
 .header {
+    display: flexbox;
     text-align: center;
     padding: 3rem 1rem;
     background-color: #fff;
@@ -66,6 +70,7 @@ header h1 {
 }
 
 .about-section, .services-section, .contact-section {
+    display: block;
     justify-content: center; /* I added this */
     text-align: center; /* I added this */
     background-color: white;
@@ -106,4 +111,39 @@ em {
     color: white;
     margin-top: 2rem;
 }
+.footer-social {
+  margin-top: 0;
+}
+.footer-social a {
+  color: #e6e6e6;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s; 
+}
 
+.footer-social a:hover {
+  color: #ffd700;
+}
+
+/* Adding Display Properties 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+    */
