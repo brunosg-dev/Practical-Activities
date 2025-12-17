@@ -43,6 +43,12 @@ body {
 }
 
 /* Header Styling */
+
+.headerlogo {
+    width: 100px;
+    
+}
+
 .header {
     display: flexbox;
     text-align: center;
