@@ -10,13 +10,15 @@
 
 <body>
     <header class="bg-emerald-400 p-1">
-        <h1 class="text-black text-4xl font-bold">My Tailwind Website</h1>
+        <h1 class="text-black text-4xl font-bold sm:text-3xl xl:text-3xl text-center">My Tailwind Website</h1>
+        <div class="flex justify-center p-2 hover:bg-emerald-500">
         <nav>
-            <a href="#home" class="m-1 border text-emerald-900 bg-emerald-200 rounded border-emerald-700 p-0.5">Home</a>
-            <a href="#gallery" class="m-1 border text-emerald-900 bg-emerald-200 rounded border-emerald-700 p-0.5">Gallery</a>
-            <a href="#about" class="m-1 border text-emerald-900 bg-emerald-200 rounded border-emerald-700 p-0.5">About us</a>
-            <a href="#contact" class="m-1 border text-emerald-900 bg-emerald-200 rounded border-emerald-700 p-0.5">Contact</a>
+            <a href="#home" class=" hover:bg-emerald-500 flex-1 m-1 border text-emerald-900 bg-emerald-200 rounded border-emerald-700 p-0.5">Home</a>
+            <a href="#gallery" class=" hover:bg-emerald-500 flex-1 m-1 border text-emerald-900 bg-emerald-200 rounded border-emerald-700 p-0.5">Gallery</a>
+            <a href="#about" class="hover:bg-emerald-500 flex-1 m-1 border text-emerald-900 bg-emerald-200 rounded border-emerald-700 p-0.5">About us</a>
+            <a href="#contact" class="hover:bg-emerald-500 flex-1 m-1 border text-emerald-900 bg-emerald-200 rounded border-emerald-700 p-0.5">Contact</a>
         </nav>
+        </div>
     </header>
     <main>
         <div id="home" class="bg-gray-200 p-4">
@@ -31,6 +33,19 @@
         <div class="div">
 
         </div>
+
+        <!--Simple Example With flex-1 (Both boxes = same width)-->
+        <div class="flex bg-gray-300 p-4">
+ <div class="flex-1 bg-gray-400 p-2">Short</div>
+ <div class="flex-1 bg-gray-500 p-2">Very very long content</div>
+</div>
+
+<!--Simple Example With With flex-auto (Second box = wider (because content is bigger) -->
+<div class="flex bg-gray-300 p-4">
+ <div class="flex-auto bg-gray-400 p-2">Short</div>
+ <div class="flex-auto bg-gray-500 p-2">Very very long content</div>
+</div>
+
 </body>
 
 </html>
