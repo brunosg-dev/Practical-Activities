@@ -8,79 +8,78 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-[url('images/tailwind-bg.jpg')] bg-cover bg-center bg-no-repeat">
-    <header class="bg-emerald-400 p-1 flex justify-between">
-        <h1 class="text-black text-4xl font-bold sm:text-3xl xl:text-3xl text-center">My Tailwind Website</h1>
-        <div class="flex justify-center p-2 hover:bg-emerald-500">
-            <nav>
+<body class="min-h-screen bg-slate-950 bg-[url('images/tailwind-bg.jpg')] bg-cover bg-center bg-fixed bg-no-repeat text-slate-100">
+    <header class="flex flex-col items-center justify-between gap-4 bg-slate-950/85 p-4 shadow-lg shadow-cyan-950/40 sm:flex-row">
+        <h1 class="text-center text-2xl font-bold text-white sm:text-3xl">My Tailwind Website</h1>
+        <div class="flex justify-center">
+            <nav class="flex flex-wrap justify-center gap-2">
                 <a href="#home"
-                    class=" hover:bg-emerald-500 flex-1 m-1 border text-emerald-900 bg-emerald-200 rounded border-emerald-700 p-0.5">Home</a>
+                    class="rounded border border-cyan-300/50 bg-cyan-400/20 px-3 py-1 text-sm font-semibold text-cyan-50 hover:bg-cyan-300/30">Home</a>
                 <a href="#gallery"
-                    class=" hover:bg-emerald-500 flex-1 m-1 border text-emerald-900 bg-emerald-200 rounded border-emerald-700 p-0.5">Gallery</a>
+                    class="rounded border border-cyan-300/50 bg-cyan-400/20 px-3 py-1 text-sm font-semibold text-cyan-50 hover:bg-cyan-300/30">Gallery</a>
                 <a href="#about"
-                    class="hover:bg-emerald-500 flex-1 m-1 border text-emerald-900 bg-emerald-200 rounded border-emerald-700 p-0.5">About
+                    class="rounded border border-cyan-300/50 bg-cyan-400/20 px-3 py-1 text-sm font-semibold text-cyan-50 hover:bg-cyan-300/30">About
                     us</a>
                 <a href="#contact"
-                    class="hover:bg-emerald-500 flex-1 m-1 border text-emerald-900 bg-emerald-200 rounded border-emerald-700 p-0.5">Contact</a>
+                    class="rounded border border-cyan-300/50 bg-cyan-400/20 px-3 py-1 text-sm font-semibold text-cyan-50 hover:bg-cyan-300/30">Contact</a>
             </nav>
         </div>
     </header>
-    <main>
-        <div id="home" class="bg-gray-200 p-4">
-            <h2 class="text-2xl">
+    <main class="mx-auto max-w-5xl px-4 py-8">
+        <div id="home" class="rounded-lg border border-cyan-100/20 bg-slate-950/75 p-6 shadow-xl shadow-slate-950/40">
+            <h2 class="mb-3 text-2xl font-semibold text-white sm:text-3xl">
                 Welcome to my Tailwind CSS website!
             </h2>
-            <p class="text-gray-700">
+            <p class="max-w-3xl text-base leading-7 text-slate-200">
                 This is a simple website built using Tailwind CSS. It demonstrates how to use utility classes to style
                 your HTML elements quickly and efficiently.
             </p>
         </div>
 
     </main>
-    <div class="h-screen flex justify-center items-center ">
-        <div class="text-center w-full border-2 border-gray-400 bg-emerald-900 p-4 rounded-lg text-white">
-            <h1 class="text-4xl underline underline-offset-4">Tailwind</h1>
-            <p>Tailwind is an awesome framework for CSS that uses utility classes to make the
+    <div class="flex min-h-screen items-center justify-center px-4 py-12">
+        <div class="w-full max-w-3xl rounded-lg border border-cyan-100/25 bg-slate-950/80 p-8 text-center text-white shadow-2xl shadow-cyan-950/40">
+            <h1 class="text-4xl font-bold underline underline-offset-8 sm:text-5xl">Tailwind</h1>
+            <p class="mt-5 text-lg leading-8 text-slate-200">Tailwind is an awesome framework for CSS that uses utility classes to make the
                 process of styling way easier.</p>
-            <p>You can use tailwind yourself just click the link below</p>
-            <a href="https://tailwindcss.com" class="font-bold boarder boarder-black rounded
-    p-1 text-xl hover:bg-black scale-150">Tailwind Website</a>
+            <p class="mt-3 text-lg leading-8 text-slate-200">You can use Tailwind yourself, just click the link below.</p>
+            <a href="https://tailwindcss.com" class="mt-6 inline-block rounded border border-cyan-200/70 bg-cyan-300 px-5 py-2 text-lg font-bold text-slate-950 hover:bg-white">Tailwind Website</a>
         </div>
     </div>
     <!--Simple Example With flex-1 (Both boxes = same width)-->
-    <div class="flex bg-gray-300 p-4">
-        <div class="flex-1 bg-gray-400 p-2">Short</div>
-        <div class="flex-1 bg-gray-500 p-2">Very very long content</div>
+    <div class="mx-auto flex max-w-5xl bg-slate-900/85 p-4">
+        <div class="flex-1 bg-slate-700 p-2">Short</div>
+        <div class="flex-1 bg-slate-600 p-2">Very very long content</div>
     </div>
 
     <!--Simple Example With With flex-auto (Second box = wider (because content is bigger) -->
-    <div class="flex bg-gray-300 p-4">
-        <div class="flex-auto bg-gray-400 p-2">Short</div>
-        <div class="flex-auto bg-gray-500 p-2">Very very long content</div>
+    <div class="mx-auto flex max-w-5xl bg-slate-900/85 p-4">
+        <div class="flex-auto bg-slate-700 p-2">Short</div>
+        <div class="flex-auto bg-slate-600 p-2">Very very long content</div>
     </div>
     <!-- This is the footer section -->
-    <footer class="bg-emerald-400 flex justify-center">
+    <footer class="flex justify-center bg-slate-950/90 p-6 text-slate-200">
         <div class="text-center">
-            <ul class="flex justify-center">
+            <ul class="flex flex-wrap justify-center gap-2">
                 <li><a href="#home"
-                        class=" hover:bg-emerald-500 flex-1 m-1 border text-emerald-900 bg-emerald-200 rounded border-emerald-700 p-0.5">Home</a>
+                        class="rounded border border-cyan-300/50 bg-cyan-400/20 px-3 py-1 text-sm font-semibold text-cyan-50 hover:bg-cyan-300/30">Home</a>
                 </li>
                 <li><a href="#gallery"
-                        class=" hover:bg-emerald-500 flex-1 m-1 border text-emerald-900 bg-emerald-200 rounded border-emerald-700 p-0.5">Gallery</a>
+                        class="rounded border border-cyan-300/50 bg-cyan-400/20 px-3 py-1 text-sm font-semibold text-cyan-50 hover:bg-cyan-300/30">Gallery</a>
                 </li>
                 <li><a href="#about"
-                        class="hover:bg-emerald-500 flex-1 m-1 border text-emerald-900 bg-emerald-200 rounded border-emerald-700 p-0.5">About
+                        class="rounded border border-cyan-300/50 bg-cyan-400/20 px-3 py-1 text-sm font-semibold text-cyan-50 hover:bg-cyan-300/30">About
                         us</a></li>
                 <li><a href="#contact"
-                        class="hover:bg-emerald-500 flex-1 m-1 border text-emerald-900 bg-emerald-200 rounded border-emerald-700 p-0.5">Contact</a>
+                        class="rounded border border-cyan-300/50 bg-cyan-400/20 px-3 py-1 text-sm font-semibold text-cyan-50 hover:bg-cyan-300/30">Contact</a>
                 </li>
             </ul>
-            <p> &copy; 2026 Bruno Gomes ltd.</p>
-            <p>CR7 8DX <br>
+            <p class="mt-5"> &copy; 2026 Bruno Gomes ltd.</p>
+            <p class="mt-3">CR7 8DX <br>
                 LivingPlace<br>
                 4444
             </p>
-            <p>brought to you by TailwindCSS</p>
+            <p class="mt-3 text-cyan-100">brought to you by TailwindCSS</p>
         </div>
     </footer>
 </body>
